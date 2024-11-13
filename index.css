@@ -1,0 +1,81 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+/* Main game container styling */
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Game info and board styling */
+.game-info {
+    margin-left: 20px;
+}
+
+.game-info div {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Board styling */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    background-color: #fff;
+    border: 2px solid #8ef9ffb8; /* Consistent border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-sizing: border-box; /* Prevent resizing */
+}
+
+.square:focus,
+.square:active {
+    outline: none; /* Remove default button outline */
+    border: 2px solid #03f0fd; /* Optional: Slight color change on click */
+}
+
+
+.square:hover {
+    background-color: #06f7ffb6;
+}
+
+/* Dropdown and jump button styling */
+.game-info select, .game-info button {
+    padding: 8px 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.status{
+    color: #ffffff;
+}
+
+.game-info button {
+    background-color: #06f7ffb6;
+    color: white;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.game-info button:hover {
+    background-color: #06f7ffb6;
+}
